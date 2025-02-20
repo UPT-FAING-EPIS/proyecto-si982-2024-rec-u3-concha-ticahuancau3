@@ -51,18 +51,10 @@ jobs:
         with:
           name: educationcf-package
 
-      - name: Imprimir el secreto (solo para depuración)
-        run: echo "${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}" > publishsettings.xml
-
-      - name: Verificar el contenido del archivo Publish Profile
-        run: cat publishsettings.xml
-
       - name: Desplegar a Azure App Service
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          publish-profile: publishsettings.xml
+          publish-profile: ./deployment/publishsettings.xml
           package: .
-        env:
-          ACTIONS_STEP_DEBUG: true # Habilitar modo de depuración
