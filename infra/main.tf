@@ -91,5 +91,5 @@ resource "azurerm_dns_cname_record" "cname" {
   zone_name           = azurerm_dns_zone.dns.name
   resource_group_name = azurerm_resource_group.rg.name
   ttl                 = 300
-  record              = azurerm_linux_web_app.webapp.default_hostname
+  record              = azurerm_windows_web_app.webapp.default_hostname
 }
