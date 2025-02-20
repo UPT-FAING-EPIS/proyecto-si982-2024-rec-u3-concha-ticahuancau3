@@ -46,7 +46,7 @@ resource "azurerm_service_plan" "appserviceplan" {
   sku_name            = "F1"
 }
 
-resource "azurerm_linux_web_app" "webapp" {
+resource "azurerm_windows_web_app" "webapp" {
   name                = "educationfcf"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
@@ -62,7 +62,9 @@ resource "azurerm_mysql_flexible_server" "mysqlserver" {
   administrator_login = var.sqladmin_username
   administrator_password = var.sqladmin_password
   sku_name            = "GP_Standard_D2ds_v4"
-  storage_mb          = 5120
+  storage {
+    size_gb = 5  
+  }
   version             = "8.0"
 }
 
