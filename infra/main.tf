@@ -33,10 +33,7 @@ provider "azurerm" {
 }
 
 
-resource "azurerm_resource_group" "rg" {
-  name     = "educationfcf_group"
-  location = "Canada Central"
-}
+resource_group_name = "educationfcf_group"
 
 resource "azurerm_service_plan" "appserviceplan" {
   name                = "ASP-educationfcfgroup-9074"
