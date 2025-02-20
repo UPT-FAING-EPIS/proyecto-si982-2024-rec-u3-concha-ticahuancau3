@@ -44,12 +44,12 @@ data "azurerm_service_plan" "appserviceplan" {
 
 data "azurerm_windows_web_app" "webapp" {
   name                = "educationfcf"
-  resource_group_name = data.azurerm_resource_group.rg.name
+  resource_group_name = "educationfcf_group"
 }
 
 data "azurerm_mysql_flexible_server" "mysqlserver" {
   name                = "conchita"
-  resource_group_name = data.azurerm_resource_group.rg.name
+  resource_group_name = "educationfcf_group"
 }
 
 data "azurerm_mysql_flexible_database" "db" {
@@ -59,16 +59,16 @@ data "azurerm_mysql_flexible_database" "db" {
 }
 
 
-resource "azurerm_dns_zone" "dns" {
-  name                = "dns-educacionfcf.com"
-  resource_group_name = "educationfcf_group"
-}
+# resource "azurerm_dns_zone" "dns" {
+#   name                = "dns-educacionfcf.com"
+#   resource_group_name = "educationfcf_group"
+# }
 
-resource "azurerm_dns_cname_record" "cname" {
-  name                = "www"
-  zone_name           = azurerm_dns_zone.dns.name
-  resource_group_name = "educationfcf_group"
-  ttl                 = 300
-  record              = azurerm_windows_web_app.webapp.default_hostname
-}
+# resource "azurerm_dns_cname_record" "cname" {
+#   name                = "www"
+#   zone_name           = azurerm_dns_zone.dns.name
+#   resource_group_name = "educationfcf_group"
+#   ttl                 = 300
+#   record              = azurerm_windows_web_app.webapp.default_hostname
+# }
 
