@@ -1,0 +1,31 @@
+name: Ejecutar Pruebas Unitarias
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del código
+      uses: actions/checkout@v3
+
+    - name: Configurar .NET SDK
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '9.0.101'
+
+    - name: Restaurar dependencias
+      run: dotnet restore ./ProyectoCFTests/
+
+    - name: Construir el proyecto
+      run: dotnet build ./ProyectoCFTests/ --configuration Release --no-restore
+
+    - name: Ejecutar pruebas unitarias
+      run: dotnet test ./ProyectoCFTests/ --configuration Release --no-build --verbosity normal

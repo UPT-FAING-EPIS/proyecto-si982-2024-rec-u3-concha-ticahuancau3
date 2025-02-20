@@ -1,0 +1,33 @@
+@model ProyectoCF.Models.Evaluacion
+
+<h2>@Model.Titulo</h2>
+<p><strong>Descripción:</strong> @Model.Descripcion</p>
+<p><strong>Curso:</strong> @Model.Curso.Nombre</p>
+
+<h3>Preguntas</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Pregunta</th>
+            <th>Respuestas</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pregunta in Model.Preguntas)
+        {
+            <tr>
+                <td>@pregunta.Texto</td>
+                <td>
+                    <ul>
+                        @foreach (var respuesta in pregunta.Respuestas)
+                        {
+                            <li>@respuesta.Texto @(respuesta.EsCorrecta ? "(Correcta)" : "")</li>
+                        }
+                    </ul>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" asp-controller="Preguntas" asp-route-evaluacionId="@Model.Id" class="btn btn-primary">Agregar Pregunta</a>

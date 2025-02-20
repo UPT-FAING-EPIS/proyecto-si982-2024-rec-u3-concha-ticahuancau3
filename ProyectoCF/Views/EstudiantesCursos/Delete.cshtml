@@ -1,0 +1,11 @@
+@model ProyectoCF.Models.EstudianteCurso
+
+<h2>Eliminar Asignación</h2>
+
+<p>¿Está seguro de que desea eliminar la asignación del estudiante <strong>@Model.Estudiante.Nombre @Model.Estudiante.Apellido</strong> al curso <strong>@Model.Curso.Nombre</strong>?</p>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

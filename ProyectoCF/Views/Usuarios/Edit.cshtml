@@ -1,0 +1,62 @@
+@model ProyectoCF.Models.Usuario
+
+<h2>Editar Usuario</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <div class="form-group">
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="Nombre" class="form-control" value="@Model.Nombre" required />
+    </div>
+    <div class="form-group">
+        <label for="Apellido">Apellido</label>
+        <input type="text" name="Apellido" class="form-control" value="@Model.Apellido" required />
+    </div>
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" name="Email" class="form-control" value="@Model.Email" required />
+    </div>
+    <div class="form-group">
+        <label for="Contrasena">Contraseña</label>
+        <input type="password" name="Contrasena" class="form-control" value="@Model.Contrasena" required />
+    </div>
+    <div class="form-group">
+        <label for="Rol">Rol</label>
+        <select name="Rol" class="form-control">
+            @if (Context.Session.GetString("Rol") == "Administrador")
+            {
+                @if (Model.Rol == "Administrador")
+                {
+                    <option value="Administrador" selected>Administrador</option>
+                }
+                else
+                {
+                    <option value="Administrador">Administrador</option>
+                }
+
+                @if (Model.Rol == "Docente")
+                {
+                    <option value="Docente" selected>Docente</option>
+                }
+                else
+                {
+                    <option value="Docente">Docente</option>
+                }
+
+                @if (Model.Rol == "Estudiante")
+                {
+                    <option value="Estudiante" selected>Estudiante</option>
+                }
+                else
+                {
+                    <option value="Estudiante">Estudiante</option>
+                }
+            }
+            else if (Context.Session.GetString("Rol") == "Docente")
+            {
+                <option value="Estudiante" selected>Estudiante</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Guardar</button>
+</form>

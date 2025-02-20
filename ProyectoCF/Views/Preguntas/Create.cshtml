@@ -1,0 +1,57 @@
+@model ProyectoCF.Models.PreguntaCreateViewModel
+
+<h2>Agregar Pregunta y Respuestas</h2>
+
+<form asp-action="Create" method="post">
+    <input type="hidden" asp-for="EvaluacionId" />
+
+    <div class="form-group">
+        <label asp-for="Texto"></label>
+        <input type="text" class="form-control" asp-for="Texto" />
+        <span asp-validation-for="Texto" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Respuesta1"></label>
+        <input type="text" class="form-control" asp-for="Respuesta1" />
+        <span asp-validation-for="Respuesta1" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Respuesta2"></label>
+        <input type="text" class="form-control" asp-for="Respuesta2" />
+        <span asp-validation-for="Respuesta2" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Respuesta3"></label>
+        <input type="text" class="form-control" asp-for="Respuesta3" />
+        <span asp-validation-for="Respuesta3" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>¿Cuál es la respuesta correcta?</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" asp-for="CorrectaIndex" value="1" />
+            <label class="form-check-label">Respuesta 1</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" asp-for="CorrectaIndex" value="2" />
+            <label class="form-check-label">Respuesta 2</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" asp-for="CorrectaIndex" value="3" />
+            <label class="form-check-label">Respuesta 3</label>
+        </div>
+        <span asp-validation-for="CorrectaIndex" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-action="Details" asp-controller="Evaluaciones" asp-route-id="@Model.EvaluacionId" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

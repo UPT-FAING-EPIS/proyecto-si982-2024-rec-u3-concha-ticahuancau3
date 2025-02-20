@@ -1,0 +1,28 @@
+@model IEnumerable<ProyectoCF.Models.EstudianteCurso>
+
+<h2>Asignaciones de Cursos</h2>
+<a asp-action="Create" class="btn btn-primary mb-3">Asignar Curso</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Estudiante</th>
+            <th>Curso</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var asignacion in Model)
+        {
+            <tr>
+                <td>@asignacion.Estudiante.Nombre @asignacion.Estudiante.Apellido</td>
+                <td>@asignacion.Curso.Nombre</td>
+                <td>
+                    <form asp-action="Delete" asp-route-id="@asignacion.Id" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

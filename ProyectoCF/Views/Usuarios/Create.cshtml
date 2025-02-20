@@ -1,0 +1,38 @@
+@model ProyectoCF.Models.Usuario
+
+<h2>Crear Usuario</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="Nombre" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Apellido">Apellido</label>
+        <input type="text" name="Apellido" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" name="Email" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Contrasena">Contraseña</label>
+        <input type="password" name="Contrasena" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Rol">Rol</label>
+        <select name="Rol" class="form-control">
+            @if (Context.Session.GetString("Rol") == "Administrador")
+            {
+                <option value="Administrador">Administrador</option>
+                <option value="Docente">Docente</option>
+                <option value="Estudiante">Estudiante</option>
+            }
+            else if (Context.Session.GetString("Rol") == "Docente")
+            {
+                <option value="Estudiante">Estudiante</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Guardar</button>
+</form>

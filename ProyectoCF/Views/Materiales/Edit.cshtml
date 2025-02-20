@@ -1,0 +1,36 @@
+@model ProyectoCF.Models.Material
+
+<h2>Editar Material</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <div class="form-group">
+        <label for="Titulo">Título</label>
+        <input type="text" name="Titulo" class="form-control" value="@Model.Titulo" required />
+    </div>
+    <div class="form-group">
+        <label for="Descripcion">Descripción</label>
+        <textarea name="Descripcion" class="form-control">@Model.Descripcion</textarea>
+    </div>
+    <div class="form-group">
+        <label for="ArchivoUrl">Archivo URL</label>
+        <input type="text" name="ArchivoUrl" class="form-control" value="@Model.ArchivoUrl" />
+    </div>
+    <div class="form-group">
+        <label for="CursoId">Curso</label>
+        <select name="CursoId" class="form-control">
+            @foreach (var curso in (List<ProyectoCF.Models.Curso>)ViewBag.Cursos)
+            {
+                if (curso.Id == Model.CursoId)
+                {
+                    <option value="@curso.Id" selected="selected">@curso.Nombre</option>
+                }
+                else
+                {
+                    <option value="@curso.Id">@curso.Nombre</option>
+                }
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Guardar</button>
+</form>

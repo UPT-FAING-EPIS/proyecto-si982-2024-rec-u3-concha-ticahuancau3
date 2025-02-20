@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ProyectoCF</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        /* Modo oscuro */
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .dark-mode .navbar {
+            background-color: #1e1e1e !important;
+            color: #ffffff;
+        }
+
+            .dark-mode .navbar a.nav-link {
+                color: #ffffff !important;
+            }
+
+                .dark-mode .navbar a.nav-link:hover {
+                    color: #bb86fc !important;
+                }
+
+        .dark-mode .navbar-brand {
+            color: #ffffff !important;
+        }
+
+        .dark-mode .footer {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+
+            .dark-mode .footer a {
+                color: #bb86fc;
+            }
+
+                .dark-mode .footer a:hover {
+                    color: #ffffff;
+                }
+
+        .dark-mode table {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .dark-mode th,
+        .dark-mode td {
+            border: 1px solid #444444;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .dark-mode th {
+            background-color: #333333;
+        }
+
+        .dark-mode tr:hover {
+            background-color: #2c2c2c;
+        }
+
+        @@media (max-width: 576px) {
+            .navbar-brand
+
+        {
+            font-size: 1.2rem;
+        }
+
+        .navbar-nav .nav-link {
+            padding: 0.5rem 1rem;
+        }
+
+        body.dark-mode {
+            font-size: 14px;
+        }
+
+        .dark-mode .btn {
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+        }
+
+        .footer {
+            font-size: 0.9rem;
+        }
+
+            .footer a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+        }
+
+        /* Tablas responsivas */
+        .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <form asp-action="Logout" asp-controller="Auth" method="post" class="d-inline">
+                    <button type="submit" class="btn btn-danger btn-sm me-3">Salir</button>
+                </form>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ProyectoCF</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            @if (Context.Session.GetString("Rol") == "Administrador" || Context.Session.GetString("Rol") == "Docente")
+                            {
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+                            }
+                        </li>
+                        <li class="nav-item">
+                            @if (Context.Session.GetString("Rol") == "Administrador" || Context.Session.GetString("Rol") == "Docente")
+                            {
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Cursos" asp-action="Index">Cursos</a>
+                            }
+                        </li>
+                        <li class="nav-item">
+                            @if (Context.Session.GetString("Rol") == "Administrador" || Context.Session.GetString("Rol") == "Docente")
+                            {
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Materiales" asp-action="Index">Materiales</a>
+                            }
+                        </li>
+                        <li class="nav-item">
+                            @if (Context.Session.GetString("Rol") == "Administrador" || Context.Session.GetString("Rol") == "Docente")
+                            {
+                                <a class="nav-link text-dark" asp-area="" asp-controller="EstudiantesCursos" asp-action="Index">Asignaciones</a>
+                            }
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Evaluaciones" asp-action="Index">Evaluaciones</a>
+                        </li>
+                    </ul>
+                    <button id="darkModeToggle" class="btn btn-outline-secondary btn-sm">Modo Oscuro</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - ProyectoCF - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.getElementById("darkModeToggle");
+            const body = document.body;
+            const darkMode = localStorage.getItem("darkMode") === "true";
+            if (darkMode) {
+                body.classList.add("dark-mode");
+                toggleButton.textContent = "Modo Claro";
+            }
+            toggleButton.addEventListener("click", () => {
+                body.classList.toggle("dark-mode");
+                const isDarkMode = body.classList.contains("dark-mode");
+                localStorage.setItem("darkMode", isDarkMode);
+                toggleButton.textContent = isDarkMode ? "Modo Claro" : "Modo Oscuro";
+            });
+        });
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

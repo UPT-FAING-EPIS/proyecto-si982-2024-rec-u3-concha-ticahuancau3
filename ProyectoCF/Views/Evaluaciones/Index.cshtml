@@ -1,0 +1,49 @@
+@model IEnumerable<ProyectoCF.Models.EvaluacionViewModel>
+
+<h2>Evaluaciones</h2>
+
+@if (ViewBag.Rol == "Docente" || ViewBag.Rol == "Administrador")
+{
+    <a asp-action="Create" class="btn btn-primary mb-3">Crear Evaluación</a>
+}
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Curso</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var evaluacion in Model)
+        {
+            <tr>
+                <td>@evaluacion.Titulo</td>
+                <td>@evaluacion.Descripcion</td>
+                <td>@evaluacion.CursoNombre</td>
+                <td>
+                    @if (ViewBag.Rol == "Docente" || ViewBag.Rol == "Administrador")
+                    {
+                        <a asp-action="Details" asp-route-id="@evaluacion.Id" class="btn btn-info btn-sm">Ver Detalle</a>
+                        <form asp-action="Delete" asp-route-id="@evaluacion.Id" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                        </form>
+                    }
+                    else if (ViewBag.Rol == "Estudiante")
+                    {
+                        if (evaluacion.YaRendida)
+                        {
+                            <span class="badge bg-primary">Rendida</span>
+                        }
+                        else
+                        {
+                            <a asp-action="Rendir" asp-route-id="@evaluacion.Id" class="btn btn-success btn-sm">Rendir</a>
+                        }
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

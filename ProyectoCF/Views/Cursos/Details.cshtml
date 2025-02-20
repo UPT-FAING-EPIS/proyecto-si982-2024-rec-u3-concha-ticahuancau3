@@ -1,0 +1,43 @@
+@model ProyectoCF.Models.Curso
+
+<h2>Detalles del Curso: @Model.Nombre</h2>
+
+<p><strong>Descripción:</strong> @Model.Descripcion</p>
+
+<h3>Materiales</h3>
+
+@if (Model.Materiales != null && Model.Materiales.Any())
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Descripción</th>
+                <th>Archivo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var material in Model.Materiales)
+            {
+                <tr>
+                    <td>@material.Titulo</td>
+                    <td>@material.Descripcion</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(material.ArchivoUrl))
+                        {
+                            <a href="@material.ArchivoUrl" target="_blank" class="btn btn-primary btn-sm">Ver Archivo</a>
+                        }
+                        else
+                        {
+                            <span class="text-muted">No disponible</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No hay materiales disponibles para este curso.</p>
+}
