@@ -54,12 +54,11 @@ data "azurerm_mysql_flexible_server" "mysqlserver" {
 
 resource "azurerm_mysql_flexible_database" "db" {
   name                = "conchita"
-  resource_group_name = azurerm_mysql_flexible_server.mysqlserver.resource_group_name
-  server_name         = azurerm_mysql_flexible_server.mysqlserver.name
+  resource_group_name = data.azurerm_mysql_flexible_server.mysqlserver.resource_group_name
+  server_name         = data.azurerm_mysql_flexible_server.mysqlserver.name
   charset            = "utf8mb4"
   collation          = "utf8mb4_general_ci"
 }
-
 
 # resource "azurerm_dns_zone" "dns" {
 #   name                = "dns-educacionfcf.com"
