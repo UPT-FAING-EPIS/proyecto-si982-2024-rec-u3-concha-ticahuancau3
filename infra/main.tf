@@ -37,20 +37,28 @@ data "azurerm_resource_group" "rg" {
   name = "educationfcf_group"
 }
 
+# Obtener el plan de App Service
+
 data "azurerm_service_plan" "appserviceplan" {
   name                = "ASP-educationfcfgroup-9074"
   resource_group_name = data.azurerm_resource_group.rg.name
 }
 
+# Obtener el App Service
+
 data "azurerm_windows_web_app" "webapp" {
   name                = "educationfcf"
-  resource_group_name = "educationfcf_group"
+  resource_group_name = data.azurerm_resource_group.rg.name
 }
+
+# Obtener el servidor flexible de MySQL
 
 data "azurerm_mysql_flexible_server" "mysqlserver" {
   name                = "conchita"
-  resource_group_name = "educationfcf_group"
+  resource_group_name = data.azurerm_resource_group.rg.name
 }
+
+# Crear la base de datos en MySQL flexible server
 
 resource "azurerm_mysql_flexible_database" "db" {
   name                = "conchita"
@@ -59,6 +67,7 @@ resource "azurerm_mysql_flexible_database" "db" {
   charset            = "utf8mb4"
   collation          = "utf8mb4_general_ci"
 }
+
 
 # resource "azurerm_dns_zone" "dns" {
 #   name                = "dns-educacionfcf.com"
