@@ -1,7 +1,7 @@
-name: Desplegar educationcf en Azure App Service
+name: Desplegar educationfc en Azure App Service
 
 env:
-  AZURE_WEBAPP_NAME: educationcf
+  AZURE_WEBAPP_NAME: educationfc
   AZURE_WEBAPP_PACKAGE_PATH: '.'
   DOTNET_VERSION: '9'
 
@@ -28,7 +28,7 @@ jobs:
       - name: Empaquetar la app para despliegue
         uses: actions/upload-artifact@v4
         with:
-          name: educationcf-package
+          name: educationfc-package
           path: ${{env.DOTNET_ROOT}}/myapp
 
   deploy:
@@ -43,7 +43,7 @@ jobs:
       - name: Descargar el paquete de la app
         uses: actions/download-artifact@v4
         with:
-          name: educationcf-package
+          name: educationfc-package
       - name: Desplegar a Azure App Service
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
