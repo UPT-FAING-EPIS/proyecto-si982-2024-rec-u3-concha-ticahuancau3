@@ -1,0 +1,53 @@
+name: Desplegar educationcf en Azure App Service
+
+env:
+  AZURE_WEBAPP_NAME: educationcf
+  AZURE_WEBAPP_PACKAGE_PATH: '.'
+  DOTNET_VERSION: '9'
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configurar .NET Core
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+      - name: Construir la app
+        working-directory: ProyectoCF
+        run: dotnet build --configuration Release
+      - name: Publicar la app
+        working-directory: ProyectoCF
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+      - name: Empaquetar la app para despliegue
+        uses: actions/upload-artifact@v4
+        with:
+          name: educationcf-package
+          path: ${{env.DOTNET_ROOT}}/myapp
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: none
+    environment:
+      name: Production
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+    steps:
+      - name: Descargar el paquete de la app
+        uses: actions/download-artifact@v4
+        with:
+          name: educationcf-package
+      - name: Desplegar a Azure App Service
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: .
