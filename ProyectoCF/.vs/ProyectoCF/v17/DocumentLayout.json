@@ -3,64 +3,22 @@
   "WorkspaceRootPath": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocf\\proyectocf.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|solutionrelative:proyectocf.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FFDFD39-ADA1-4528-828B-831968DEB3F2}|..\\ProyectoCFTests\\ProyectoCFTests.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocftests\\proyectocftests.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{4FFDFD39-ADA1-4528-828B-831968DEB3F2}|..\\ProyectoCFTests\\ProyectoCFTests.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocftests\\controllers\\usuarioscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FFDFD39-ADA1-4528-828B-831968DEB3F2}|..\\ProyectoCFTests\\ProyectoCFTests.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocftests\\controllers\\cursoscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FFDFD39-ADA1-4528-828B-831968DEB3F2}|..\\ProyectoCFTests\\ProyectoCFTests.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocftests\\proyectocftests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Proyectos\\ProyectoCFTests\\Controllers\\CursosControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocf\\migrations\\connectionmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|solutionrelative:migrations\\connectionmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocf\\controllers\\cursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|solutionrelative:controllers\\cursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocf\\models\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|solutionrelative:models\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocf\\models\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|solutionrelative:models\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocf\\models\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|solutionrelative:models\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocf\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocf\\models\\evaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|solutionrelative:models\\evaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocf\\models\\nota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|solutionrelative:models\\nota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocf\\views\\evaluaciones\\rendir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|solutionrelative:views\\evaluaciones\\rendir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocf\\models\\preguntacreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|solutionrelative:models\\preguntacreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocf\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|d:\\proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\proyectocf\\controllers\\estudiantescursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4114DBA-16AE-478D-8D5D-B93B246180BA}|ProyectoCF.csproj|solutionrelative:controllers\\estudiantescursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,7 +28,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,195 +36,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProyectoCF",
-              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\ProyectoCF.csproj",
-              "RelativeDocumentMoniker": "ProyectoCF.csproj",
-              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\ProyectoCF.csproj",
-              "RelativeToolTip": "ProyectoCF.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-20T02:34:22.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProyectoCFTests",
-              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCFTests\\ProyectoCFTests.csproj",
-              "RelativeDocumentMoniker": "..\\ProyectoCFTests\\ProyectoCFTests.csproj",
-              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCFTests\\ProyectoCFTests.csproj",
-              "RelativeToolTip": "..\\ProyectoCFTests\\ProyectoCFTests.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-20T02:34:16.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "CursosControllerTests.cs",
               "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCFTests\\Controllers\\CursosControllerTests.cs",
               "RelativeDocumentMoniker": "..\\ProyectoCFTests\\Controllers\\CursosControllerTests.cs",
               "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCFTests\\Controllers\\CursosControllerTests.cs",
               "RelativeToolTip": "..\\ProyectoCFTests\\Controllers\\CursosControllerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T02:33:25.765Z",
+              "WhenOpened": "2025-02-20T03:47:59.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProyectoCFTests.csproj",
-              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCFTests\\ProyectoCFTests.csproj",
-              "RelativeDocumentMoniker": "..\\ProyectoCFTests\\ProyectoCFTests.csproj",
-              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCFTests\\ProyectoCFTests.csproj",
-              "RelativeToolTip": "..\\ProyectoCFTests\\ProyectoCFTests.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-20T02:33:21.774Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "Connection.cs",
               "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Models\\Connection.cs",
               "RelativeDocumentMoniker": "Models\\Connection.cs",
               "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Models\\Connection.cs",
               "RelativeToolTip": "Models\\Connection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T01:44:53.437Z"
+              "WhenOpened": "2025-02-20T03:47:39.338Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ConnectionModelSnapshot.cs",
-              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Migrations\\ConnectionModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Migrations\\ConnectionModelSnapshot.cs",
-              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Migrations\\ConnectionModelSnapshot.cs",
-              "RelativeToolTip": "Migrations\\ConnectionModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UsuariosControllerTests.cs",
+              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCFTests\\Controllers\\UsuariosControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\ProyectoCFTests\\Controllers\\UsuariosControllerTests.cs",
+              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCFTests\\Controllers\\UsuariosControllerTests.cs",
+              "RelativeToolTip": "..\\ProyectoCFTests\\Controllers\\UsuariosControllerTests.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAK4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T01:44:33.343Z"
+              "WhenOpened": "2025-02-20T03:39:16.9Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Material.cs",
-              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Models\\Material.cs",
-              "RelativeDocumentMoniker": "Models\\Material.cs",
-              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Models\\Material.cs",
-              "RelativeToolTip": "Models\\Material.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
+              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAqwCwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T01:37:33.678Z"
+              "WhenOpened": "2025-02-20T03:38:26.905Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CursosControllerTests.cs",
-              "DocumentMoniker": "D:\\Proyectos\\ProyectoCFTests\\Controllers\\CursosControllerTests.cs",
-              "RelativeDocumentMoniker": "..\\..\\ProyectoCFTests\\Controllers\\CursosControllerTests.cs",
-              "ToolTip": "D:\\Proyectos\\ProyectoCFTests\\Controllers\\CursosControllerTests.cs",
-              "RelativeToolTip": "..\\..\\ProyectoCFTests\\Controllers\\CursosControllerTests.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T01:28:35.634Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Asistencia.cs",
-              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Models\\Asistencia.cs",
-              "RelativeDocumentMoniker": "Models\\Asistencia.cs",
-              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Models\\Asistencia.cs",
-              "RelativeToolTip": "Models\\Asistencia.cs",
+              "Title": "EstudiantesCursosController.cs",
+              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Controllers\\EstudiantesCursosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstudiantesCursosController.cs",
+              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Controllers\\EstudiantesCursosController.cs",
+              "RelativeToolTip": "Controllers\\EstudiantesCursosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T01:26:48.995Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CursosController.cs",
-              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Controllers\\CursosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CursosController.cs",
-              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Controllers\\CursosController.cs",
-              "RelativeToolTip": "Controllers\\CursosController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAlwCcAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T16:59:12.419Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Evaluacion.cs",
-              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Models\\Evaluacion.cs",
-              "RelativeDocumentMoniker": "Models\\Evaluacion.cs",
-              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Models\\Evaluacion.cs",
-              "RelativeToolTip": "Models\\Evaluacion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T15:13:54.523Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Nota.cs",
-              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Models\\Nota.cs",
-              "RelativeDocumentMoniker": "Models\\Nota.cs",
-              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Models\\Nota.cs",
-              "RelativeToolTip": "Models\\Nota.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T14:42:37.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Rendir.cshtml",
-              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Views\\Evaluaciones\\Rendir.cshtml",
-              "RelativeDocumentMoniker": "Views\\Evaluaciones\\Rendir.cshtml",
-              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Views\\Evaluaciones\\Rendir.cshtml",
-              "RelativeToolTip": "Views\\Evaluaciones\\Rendir.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-17T15:51:12.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PreguntaCreateViewModel.cs",
-              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Models\\PreguntaCreateViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\PreguntaCreateViewModel.cs",
-              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Models\\PreguntaCreateViewModel.cs",
-              "RelativeToolTip": "Models\\PreguntaCreateViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T15:47:41.419Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-14T04:09:32.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Proyectos\\proyecto-si982-2024-rec-u3-concha-ticahuancau3\\ProyectoCF\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T04:08:44.434Z"
+              "WhenOpened": "2025-02-20T03:38:22.815Z",
+              "EditorCaption": ""
             }
           ]
         }
