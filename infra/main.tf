@@ -52,6 +52,10 @@ resource "azurerm_windows_web_app" "webapp" {
   resource_group_name = azurerm_resource_group.rg.name
   service_plan_id     = azurerm_service_plan.appserviceplan.id
   depends_on          = [azurerm_service_plan.appserviceplan]
+  site_config {
+    always_on               = true
+    managed_pipeline_mode   = "Integrated"  
+  }
 }
 
 
@@ -63,9 +67,9 @@ resource "azurerm_mysql_flexible_server" "mysqlserver" {
   administrator_password = var.sqladmin_password
   sku_name            = "GP_Standard_D2ds_v4"
   storage {
-    size_gb = 5  
+    size_gb = 20  
   }
-  version             = "8.0"
+  version             = "8.0.21"
 }
 
 resource "azurerm_mysql_flexible_database" "db" {
