@@ -29,3 +29,28 @@
 ## Diagrama de Infraestructura
 
 ![image](https://github.com/user-attachments/assets/1e1d03b7-2eaf-45b9-92d8-51a6b6a1c091)
+
+## estimacion de costos
+
+| Name                             | Monthly Qty | Unit     | Monthly Cost |
+|----------------------------------|------------|---------|--------------|
+| **azurerm_mysql_flexible_server** | 750        | hours   | **$0.00** |
+| **azurerm_service_plan**         | 730        | hours   | **$0.00** |
+| **azurerm_windows_web_app**      | 730        | hours   | **$0.00** |
+| **azurerm_resource_group**       | -          | -       | **$0.00** |
+| **Project total**                |            |         | **$0.00** |
+
+## Capturas
+![image](https://github.com/user-attachments/assets/7c87636b-3eb8-453c-a623-3560b6553c6d)
+
+![image](https://github.com/user-attachments/assets/8584593b-6daa-4c2f-9748-54e8da806461)
+
+![image](https://github.com/user-attachments/assets/1e34c9a6-24f6-4e7b-a86f-5ee588fd4f60)
+
+![image](https://github.com/user-attachments/assets/7e2d4f09-f40b-44b5-83d9-3444bd0d3032)
+
+![image](https://github.com/user-attachments/assets/72aae7a8-2228-4d35-ae08-d3f4ceaa9188)
+
+![image](https://github.com/user-attachments/assets/bce1b2a9-9f7d-44a8-9e3d-bb2e5b023203)
+
+
