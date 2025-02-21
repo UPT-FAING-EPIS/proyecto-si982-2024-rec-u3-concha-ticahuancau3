@@ -29,3 +29,15 @@
 ## Diagrama de Infraestructura
 
 ![image](https://github.com/user-attachments/assets/1e1d03b7-2eaf-45b9-92d8-51a6b6a1c091)
+
+## estimacion de costos
+
+![image](https://github.com/user-attachments/assets/fe689e45-350f-4124-8f88-5df302827d84)
+
+| Name                             | Monthly Qty | Unit     | Monthly Cost |
+|----------------------------------|------------|---------|--------------|
+| **azurerm_mysql_flexible_server** | 750        | hours   | **$0.00** (F1 Free Tier) |
+| **azurerm_service_plan**         | 730        | hours   | **$0.00** (F1 Free Tier) |
+| **azurerm_windows_web_app**      | 730        | hours   | **$0.00** (F1 Free Tier) |
+| **azurerm_resource_group**       | -          | -       | **$0.00** (No cost) |
+| **Project total**                |            |         | **$0.00** |
