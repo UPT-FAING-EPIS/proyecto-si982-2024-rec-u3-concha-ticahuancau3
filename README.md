@@ -34,8 +34,8 @@
 
 | Name                             | Monthly Qty | Unit     | Monthly Cost |
 |----------------------------------|------------|---------|--------------|
-| **azurerm_mysql_flexible_server** | 750        | hours   | **$0.00** (F1 Free Tier) |
-| **azurerm_service_plan**         | 730        | hours   | **$0.00** (F1 Free Tier) |
-| **azurerm_windows_web_app**      | 730        | hours   | **$0.00** (F1 Free Tier) |
-| **azurerm_resource_group**       | -          | -       | **$0.00** (No cost) |
+| **azurerm_mysql_flexible_server** | 750        | hours   | **$0.00** |
+| **azurerm_service_plan**         | 730        | hours   | **$0.00** |
+| **azurerm_windows_web_app**      | 730        | hours   | **$0.00** |
+| **azurerm_resource_group**       | -          | -       | **$0.00** |
 | **Project total**                |            |         | **$0.00** |
