@@ -32,8 +32,6 @@
 
 ## estimacion de costos
 
-![image](https://github.com/user-attachments/assets/fe689e45-350f-4124-8f88-5df302827d84)
-
 | Name                             | Monthly Qty | Unit     | Monthly Cost |
 |----------------------------------|------------|---------|--------------|
 | **azurerm_mysql_flexible_server** | 750        | hours   | **$0.00** (F1 Free Tier) |
